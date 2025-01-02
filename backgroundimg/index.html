@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image changer</title>
+</head>
+<body>
+
+    <b>Mouse over these images, and the background will change</b>
+    <table width="300" height="100">
+        <tr>
+            <td onmouseover="bgchange('1.jpg')" background="1.jpg"></td>
+            <td onmouseover="bgchange('2.jpg')" background="2.jpg"></td>
+            <td onmouseover="bgchange('3.jpg')" background="3.jpg"></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        function bgchange(bg) {
+            document.body.background = bg
+        }
+    </script>
+</body>
+</html>

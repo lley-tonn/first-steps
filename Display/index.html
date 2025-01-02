@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+</head>
+<body>
+    <script language="javascript">
+        function employee(empno,ename,salary) {
+            this.empno = empno
+            this.ename = ename
+            this.salary = salary
+        }
+        var x,y,z
+
+        x = prompt("Employee number?")
+        y = prompt("Employee name?")
+        z = prompt("Employee salary?")
+
+        e1 = new employee(x,y,z)
+        document.write("<h1>")
+        
+            document.write("Employee Number is " +e1.empno + "<h1>")
+                document.write("Employee Name is " +e1.ename + "<h1>")
+                    document.write("Employee Salary is " +e1.salary + "<h1>")
+                        document.write("</h1>")
+    </script>
+</body>
+</html>
